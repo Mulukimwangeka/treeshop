@@ -1,20 +1,31 @@
 import React from 'react';
 import './App.css';
 import ProductList from './ProductList';
-import HomePage from './Home'; // Import the HomePage component
+import HomePage from './Home'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLeaf } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
     <div className="App">
       <header className="bg-primary py-4 text-light">
-        <h1 className="text-center">Tree Shop</h1>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col text-center">
+              <h1 className="display-4">Welcome to <FontAwesomeIcon icon={faLeaf} className="leaf-icon" /> Tree Shop</h1>
+              <p className="lead">Explore a world of beautiful trees and contribute to a greener planet.</p>
+            </div>
+          </div>
+        </div>
       </header>
-      <main className="container mt-4">
-        <HomePage /> {/* Add the HomePage component */}
+      <main>
+        <HomePage /> 
         <ProductList />
       </main>
       <footer className="bg-secondary py-3 text-light text-center">
-        {/* Footer content */}
+        <div className="container">
+          <p>&copy; 2023 Tree Shop. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
