@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Product = ({ id, name, description, price, imageUrl }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -39,7 +41,7 @@ const Product = ({ id, name, description, price, imageUrl }) => {
                 aria-label="Close"
                 onClick={closeModal}
               >
-                <span aria-hidden="true">&times;</span>
+                <FontAwesomeIcon icon={faTimes} />
               </button>
             </div>
             <div className="modal-body">
