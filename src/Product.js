@@ -43,7 +43,12 @@ const Product = ({ id, name, description, price, imageUrl }) => {
               </button>
             </div>
             <div className="modal-body">
-              <img src={imageUrl} alt={name} className="modal-product-image" />
+              <img
+                src={imageUrl}
+                alt={name}
+                className="modal-product-image"
+                style={{ maxWidth: '390px' }} // Adjust the width as needed
+              />
               {/* Add your purchase form or payment details here */}
               <p>Enter payment details or form here</p>
             </div>
