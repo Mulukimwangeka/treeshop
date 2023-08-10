@@ -14,7 +14,9 @@ function App() {
       <footer className="bg-secondary py-3 text-light text-center">
         {/* Footer content */}
       </footer>
+      
     </div>
+    
   );
 }
 
