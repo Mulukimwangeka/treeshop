@@ -9,14 +9,6 @@ const ProductList = () => {
     setSearchQuery(event.target.value);
   };
 
-  const handleSearchSubmit = () => {
-    // Perform search based on the current search query
-    // You can update the filteredTrees array similarly to the onChange event
-
-    // For now, let's log the search query when the button is clicked
-    console.log('Search Submitted:', searchQuery);
-  };
-
   const filteredTrees = trees.filter(tree => {
     return tree.name.toLowerCase().includes(searchQuery.toLowerCase());
   });
@@ -32,9 +24,6 @@ const ProductList = () => {
               value={searchQuery}
               onChange={handleSearchChange}
             />
-            <button className="btn btn-primary" onClick={handleSearchSubmit}>
-              Search
-            </button>
           </div>
         </div>
         {filteredTrees.map(tree => (
