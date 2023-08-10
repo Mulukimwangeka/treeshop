@@ -25,7 +25,7 @@ function App() {
       </main>
       <footer className="bg-secondary py-3 text-light text-center">
         <div className="container">
-        <ContactUs /> {/* Add the ContactUs component */}
+        <ContactUs /> 
 
           <p>&copy; 2023 Tree Shop. All rights reserved.</p>
         </div>
