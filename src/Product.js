@@ -61,10 +61,12 @@ const Product = ({ id, name, description, price, imageUrl }) => {
                 className="modal-product-image"
                 style={{ maxWidth: '300px' }} // Adjust the width as needed
               />
+                <br></br>
+                              
+
               {/* Add your purchase form or payment details here */}
               <div className="form-group">
                 <label htmlFor="phoneNumber">Enter your phone number it will send a message to your phone</label>
-                <br></br>
                 <input
                   type="text"
                   id="phoneNumber"
