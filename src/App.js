@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ProductList from './ProductList';
 import HomePage from './Home'; 
+import ContactUs from './ContactUs'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,6 +25,8 @@ function App() {
       </main>
       <footer className="bg-secondary py-3 text-light text-center">
         <div className="container">
+        <ContactUs /> {/* Add the ContactUs component */}
+
           <p>&copy; 2023 Tree Shop. All rights reserved.</p>
         </div>
       </footer>
