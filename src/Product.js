@@ -28,7 +28,7 @@ const Product = ({ id, name, description, price, imageUrl }) => {
         className={`modal fade ${modalOpen ? 'show' : ''}`}
         style={{ display: modalOpen ? 'block' : 'none' }}
       >
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">Purchase {name}</h5>
