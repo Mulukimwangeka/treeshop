@@ -1,22 +1,17 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import ProductList from './ProductList';
-import CheckoutPage from './CheckoutPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Tree Shop</h1>
+      <header className="bg-primary py-4 text-light">
+        <h1 className="text-center">Tree Shop</h1>
       </header>
-      <main>
-        <Routes>
-          <Route path="/" element={<ProductList />} />
-          <Route path="/checkout/:id" element={<CheckoutPage />} />
-        </Routes>
+      <main className="container mt-4">
+        <ProductList />
       </main>
-      <footer>
+      <footer className="bg-secondary py-3 text-light text-center">
         {/* Footer content */}
       </footer>
     </div>

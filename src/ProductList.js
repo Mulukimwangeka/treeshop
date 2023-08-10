@@ -12,7 +12,7 @@ const ProductList = () => {
           name={tree.name}
           description={tree.description}
           price={tree.price}
-          imageUrl={tree.imageUrl} 
+          imageUrl={tree.imageUrl} // Pass the imageUrl property
         />
       ))}
     </div>

@@ -8,7 +8,7 @@ const trees = [
     },
 
     {
-        id: 1,
+        id: 2,
         name: "Mangrove Tree",
         description: "A majestic oak tree.",
         price: 100,
