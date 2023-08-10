@@ -47,7 +47,7 @@ const Product = ({ id, name, description, price, imageUrl }) => {
                 src={imageUrl}
                 alt={name}
                 className="modal-product-image"
-                style={{ maxWidth: '390px' }} // Adjust the width as needed
+                style={{ maxWidth: '300px' }} // Adjust the width as needed
               />
               {/* Add your purchase form or payment details here */}
               <p>Enter payment details or form here</p>
