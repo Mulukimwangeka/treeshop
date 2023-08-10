@@ -27,7 +27,7 @@ function App() {
         <div className="container">
         <ContactUs /> 
 
-          <p>&copy; 2023 Tree Shop. All rights reserved.</p>
+          <p className="tree-description">&copy; 2023 Tree Shop. All rights reserved.</p>
         </div>
       </footer>
     </div>
