@@ -4,6 +4,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Product = ({ id, name, description, price, imageUrl }) => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
 
   const openModal = () => {
     setModalOpen(true);
@@ -11,6 +12,15 @@ const Product = ({ id, name, description, price, imageUrl }) => {
 
   const closeModal = () => {
     setModalOpen(false);
+  };
+
+  const handlePhoneNumberChange = (event) => {
+    setPhoneNumber(event.target.value);
+  };
+
+  const handleSendButton = () => {
+    // Perform the action to send the message to the provided phone number
+    alert(`Sending message to ${phoneNumber}`);
   };
 
   return (
@@ -52,7 +62,21 @@ const Product = ({ id, name, description, price, imageUrl }) => {
                 style={{ maxWidth: '300px' }} // Adjust the width as needed
               />
               {/* Add your purchase form or payment details here */}
-              <p>Enter payment details or form here</p>
+              <div className="form-group">
+                <label htmlFor="phoneNumber">Enter your phone number it will send a message to your phone</label>
+                <br></br>
+                <input
+                  type="text"
+                  id="phoneNumber"
+                  className="form-control"
+                  value={phoneNumber}
+                  onChange={handlePhoneNumberChange}
+                />
+              </div>
+              <br></br>
+              <button className="btn btn-primary" onClick={handleSendButton}>
+                Send
+              </button>
             </div>
           </div>
         </div>
